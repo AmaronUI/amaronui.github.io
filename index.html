@@ -1,1 +1,18 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmaronUI</title>
+    </head>
+    <body>
+        <a href="#" data-bind="text: message, click: click">Hello World</a>
+        
+        <script src='code/js/bck2brwsr.js'></script>
+        <script>
+            var vm = bck2brwsr('code/js/app.js');
+            vm.loadClass('io.github.amaronui.Main', function (mainClass) {
+                mainClass.invoke('main', ['mainpage']);
+            });
+        </script>        
+    </body>
+</html>
+    

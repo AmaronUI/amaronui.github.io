@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <goals>
+                <goal>install</goal>
+                <goal>bck2brwsr:show</goal>
+        </goals>
+    </action>
+    <action>
+            <actionName>javadoc</actionName>
+            <goals>
+                <goal>clean</goal>
+                <goal>linkcheck:linkcheck</goal>
+            </goals>
+        </action>
+</actions>
